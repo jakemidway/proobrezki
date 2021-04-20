@@ -1,0 +1,57 @@
+
+@import "./../variables";
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 720px;
+  padding: 48px 0;
+  color: white;
+  font-size: 2rem;
+  background-image: url("./../assets/img/header/bg-header.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  &__logo{
+    font-family: 'OpenSansBold', serif;
+  }
+  &__top-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__navigation{
+    font-size: 15px;
+  }
+  &__nav-list{
+    display: flex;
+  }
+  &__nav-item{
+    margin-left: 54px;
+  }
+  &__nav-link{
+    font-family: RobotoRegular, sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+  }
+  &__offer{
+    padding: 74px 0 82px;
+  }
+  &__title{
+    text-align: center;
+    font-family: 'RobotoBlack', sans-serif;
+    font-weight: 900;
+    font-size:4rem;
+    letter-spacing: 0.13em;
+    margin-bottom: 60px;
+  }
+  &__text{
+    font-family: OpenSansBold, serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3.6rem;
+    letter-spacing: 0.13em;
+  }
+}

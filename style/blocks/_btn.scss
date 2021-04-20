@@ -1,0 +1,19 @@
+@import "./../variables";
+
+.btn{
+  &__body{
+    width: 224px;
+    height: 58px;
+    background: $colorBtn;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text{
+    font-family: OpenSansBold, serif;
+    font-weight: 800;
+    color: $colorText;
+  }
+}
