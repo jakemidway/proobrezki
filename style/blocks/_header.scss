@@ -1,5 +1,6 @@
 
 @import "./../variables";
+@import "./../mixin";
 
 .header{
   display: flex;
@@ -10,7 +11,7 @@
   padding: 48px 0;
   color: white;
   font-size: 2rem;
-  background-image: url("./../assets/img/header/bg-header.png");
+  @include imgPath("header/bg-header.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -23,7 +24,7 @@
     align-items: baseline;
   }
   &__navigation{
-    font-size: 15px;
+    font-size: 1.5rem;
   }
   &__nav-list{
     display: flex;

@@ -1,0 +1,8 @@
+
+
+@mixin imgPath($name) {
+      background-image: url("./../assets/img/#{$name}");
+}
+
+
+

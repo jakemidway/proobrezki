@@ -46,7 +46,7 @@
   align-items: baseline;
 }
 .header__navigation {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .header__nav-list {
   display: flex;
@@ -91,6 +91,7 @@
 .btn__text {
   font-family: OpenSansBold, serif;
   font-weight: 800;
+  font-size: 1.5rem;
   color: #413431;
 }
 
