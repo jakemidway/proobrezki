@@ -51,6 +51,11 @@
 .header__nav-list {
   display: flex;
 }
+@media screen and (max-width: 1080px) {
+  .header__nav-list {
+    display: none;
+  }
+}
 .header__nav-item {
   margin-left: 54px;
 }
@@ -94,6 +99,9 @@
   text-align: center;
   line-height: 3.6rem;
   letter-spacing: 0.13em;
+}
+.header__accent-text {
+  color: #EBB018;
 }
 
 .btn__body {
@@ -140,6 +148,13 @@ li {
 
 .container {
   width: 1170px;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

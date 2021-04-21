@@ -15,6 +15,7 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+
   &__logo{
     font-family: 'OpenSansBold', serif;
   }
@@ -26,8 +27,14 @@
   &__navigation{
     font-size: 1.5rem;
   }
+  &__burger-btn{
+
+  }
   &__nav-list{
     display: flex;
+    @media screen and (max-width: 1080px){
+      display: none;
+    }
   }
   &__nav-item{
     margin-left: 54px;
@@ -75,5 +82,8 @@
     text-align: center;
     line-height: 3.6rem;
     letter-spacing: 0.13em;
+  }
+  &__accent-text{
+    color: $colorBtn;
   }
 }
