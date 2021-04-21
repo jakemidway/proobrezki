@@ -58,6 +58,24 @@
   font-family: RobotoRegular, sans-serif;
   color: white;
   letter-spacing: 0.1em;
+  position: relative;
+  display: inline-block;
+}
+.header__nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #EBB018;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+  transform: scaleX(0);
+}
+.header__nav-link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 .header__offer {
   padding: 74px 0 82px;
@@ -82,11 +100,17 @@
   width: 224px;
   height: 58px;
   background: #EBB018;
+  border: 2px solid #EBB018;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out 0s;
+}
+.btn__body:hover {
+  background-color: white;
+  border: 2px solid #413431;
 }
 .btn__text {
   font-family: OpenSansBold, serif;
@@ -98,6 +122,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
