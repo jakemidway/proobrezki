@@ -32,6 +32,7 @@
   }
   &__nav-list{
     display: flex;
+    //display: none;
     @media screen and (max-width: 1080px){
       display: none;
     }
@@ -56,13 +57,18 @@
       visibility: hidden;
       transition: all 0.3s ease-in-out 0s;
       transform: scaleX(0);
-
     }
     &:hover{
       &:before{
         visibility: visible;
         transform: scaleX(1);
       }
+    }
+  }
+  &__header__burger-btn{
+    display: none;
+    @media screen and (max-width: 1080px){
+      display: block;
     }
   }
   &__offer{
