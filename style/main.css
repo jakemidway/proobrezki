@@ -203,6 +203,11 @@ h3 {
   text-align: center;
 }
 
+.examples {
+  padding: 100px 0 94px;
+  background-color: #F5F3F0;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
