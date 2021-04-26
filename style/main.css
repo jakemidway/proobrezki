@@ -1,22 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "OpenSansRegular", serif;
-  font-size: 10px;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
 @font-face {
   font-family: "OpenSansRegular";
   src: url("./../assets/fonts/Open_Sans/OpenSans-Regular.ttf");
@@ -42,6 +23,35 @@ li {
   src: url("./../assets/fonts/Roboto/Roboto-Regular.ttf");
   font-style: normal;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "OpenSansRegular", serif;
+  font-size: 10px;
+  color: #413431;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-family: "RobotoBlack", sans-serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: "RobotoBlack", sans-serif;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -154,8 +164,33 @@ li {
   color: #413431;
 }
 
+.services {
+  padding: 100px 0;
+}
+.services__title {
+  margin-bottom: 78px;
+}
+.services__item {
+  width: 222px;
+  padding-top: 148px;
+}
+.services__content {
+  display: flex;
+  justify-content: space-between;
+}
+.services__titleService {
+  font-size: 2.6rem;
+  margin-bottom: 21px;
+  text-align: center;
+}
+.services__text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .container {
   width: 1170px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1200px) {
   .container {

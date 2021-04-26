@@ -1,0 +1,24 @@
+.services{
+  padding: 100px 0;
+  &__title{
+    margin-bottom: 78px;
+  }
+  &__item{
+    //background-image: url("");
+    width: 222px;
+    padding-top: 148px;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__titleService{
+    font-size: 2.6rem;
+    margin-bottom: 21px;
+    text-align: center;
+  }
+  &__text{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

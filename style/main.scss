@@ -1,3 +1,8 @@
+@import "fonts";
+@import "variables";
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +11,7 @@
 html{
   font-family: 'OpenSansRegular', serif;
   font-size: 10px;
+  color: $colorText;
 }
 a{
   text-decoration: none;
@@ -13,17 +19,26 @@ a{
 li{
   list-style: none;
 }
+h2{
+  font-family: 'RobotoBlack', sans-serif;
+  font-size: 36px;
+}
+h3{
+  font-family: 'RobotoBlack', sans-serif;
+}
 
 
-@import "fonts";
-@import "variables";
+
+//blocks
 @import "./blocks/header";
 @import "./blocks/btn";
+@import "blocks/services";
 
 
 
 .container{
   width: 1170px;
+  margin: 0 auto;
   @media screen and (max-width: 1200px) {
     width: 100%;
     padding-left: 10px;
