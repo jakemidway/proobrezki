@@ -3,14 +3,29 @@
   &__title{
     margin-bottom: 78px;
   }
-  &__item{
-    //background-image: url("");
-    width: 222px;
-    padding-top: 148px;
-  }
   &__content{
     display: flex;
     justify-content: space-between;
+  }
+  &__item{
+    //background-image: url("");
+    width: 222px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__ico{
+    background: linear-gradient(135deg, $gradientFirstColor 0%, $gradientSecondColor 100%);
+    box-shadow: 0 5px 25px rgba(251, 213, 138, 0.6);
+    border-radius: 4px;
+    width: 105px;
+    height: 105px;
+    text-align: center;
+    line-height: 105px;
+    margin-bottom: 43px;
+    img{
+      vertical-align: middle;
+    }
   }
   &__titleService{
     font-size: 2.6rem;

@@ -170,13 +170,28 @@ h3 {
 .services__title {
   margin-bottom: 78px;
 }
-.services__item {
-  width: 222px;
-  padding-top: 148px;
-}
 .services__content {
   display: flex;
   justify-content: space-between;
+}
+.services__item {
+  width: 222px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services__ico {
+  background: linear-gradient(135deg, #FFD27B 0%, rgba(255, 222, 158, 0.85) 100%);
+  box-shadow: 0 5px 25px rgba(251, 213, 138, 0.6);
+  border-radius: 4px;
+  width: 105px;
+  height: 105px;
+  text-align: center;
+  line-height: 105px;
+  margin-bottom: 43px;
+}
+.services__ico img {
+  vertical-align: middle;
 }
 .services__titleService {
   font-size: 2.6rem;
