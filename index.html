@@ -117,29 +117,73 @@
             <div class="slider__container">
                 <div class="slider__wrapper">
                     <div class="slider__items">
+
                         <div class="slider__item">
-                            <div class="slider__item-container">
-                                <div class="slider__item-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae inventore minima tenetur.</div>
+                            <div class="slider__item-container ">
+                                <div class="slider__item-content examples__item">
+                                    <div class="flex-wrapper">
+                                        <img src="./assets/img/examples/Grey.png" alt="Комод Grey">
+                                        <h3 class="examples__item_name">Комод Grey</h3>
+                                        <p class="examples__item_text">Сосна. Умный, будет хранить ваши секреты и тайны.</p>
+                                    </div>
+
+                                    <p class="examples__item_text">Массив сосны</p>
+                                </div>
                             </div>
                         </div>
+
                         <div class="slider__item">
                             <div class="slider__item-container">
-                                <div class="slider__item-content">2</div>
+                                <div class="slider__item-content examples__item">
+                                    <div class="flex-wrapper">
+                                        <img src="./assets/img/examples/Singer.png" alt="Стол Singer">
+                                        <h3 class="examples__item_name">Стол Singer</h3>
+                                        <p class="examples__item_text">Декоративный столик из всеми известной швейной машинки.</p>
+                                    </div>
+
+                                    <p class="examples__item_text">Массив сосны</p>
+                                </div>
                             </div>
                         </div>
+
                         <div class="slider__item">
                             <div class="slider__item-container">
-                                <div class="slider__item-content">3</div>
+                                <div class="slider__item-content examples__item">
+                                    <div class="flex-wrapper">
+                                        <img src="./assets/img/examples/Home.png" alt="Подсвечник Home">
+                                        <h3 class="examples__item_name">Подсвечник Home</h3>
+                                        <p class="examples__item_text">Подвесной декоративный подсвечник. Создает уют.</p>
+                                    </div>
+
+                                    <p class="examples__item_text">Кованое железо </p>
+                                </div>
                             </div>
                         </div>
+
                         <div class="slider__item">
                             <div class="slider__item-container">
-                                <div class="slider__item-content">4</div>
+                                <div class="slider__item-content examples__item">
+                                    <div class="flex-wrapper">
+                                        <img src="./assets/img/examples/Cubs.png" alt="Развивающие кубы">
+                                        <h3 class="examples__item_name">Развивающие кубы</h3>
+                                        <p class="examples__item_text">Кубики из натурального дерева, приятные на ощупь, для мелкой моторики.</p>
+                                    </div>
+
+                                    <p class="examples__item_text">Сосна</p>
+                                </div>
                             </div>
                         </div>
+
                         <div class="slider__item">
                             <div class="slider__item-container">
-                                <div class="slider__item-content">5</div>
+                                <div class="slider__item-content examples__item">
+                                    <div class="flex-wrapper">
+                                        <h3 class="examples__item_name">Lorem ipsum.</h3>
+                                        <p class="examples__item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, veritatis.</p>
+                                    </div>
+
+                                    <p class="examples__item_text">Lorem ipsum dolor.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -164,7 +208,9 @@
         // получаем корневой элемент слайдера
         const $slider = document.querySelector('[data-slider="chiefslider"]');
         // выполняем инициализацию
-        new ChiefSlider($slider);
+        new ChiefSlider($slider, {
+            loop: false // без зацикливания
+        });
     });
 </script>
 </body>

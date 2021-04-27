@@ -45,11 +45,12 @@ li {
 
 h2 {
   font-family: "RobotoBlack", sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
 }
 
 h3 {
   font-family: "RobotoBlack", sans-serif;
+  font-size: 2.2rem;
 }
 
 .header {
@@ -206,6 +207,31 @@ h3 {
 .examples {
   padding: 100px 0 94px;
   background-color: #F5F3F0;
+  font-size: 1.5rem;
+}
+.examples__title {
+  margin-bottom: 77px;
+}
+.examples__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 26px;
+  min-height: 397px;
+}
+.examples__item img {
+  margin-bottom: 35px;
+}
+.examples__item_name {
+  margin-bottom: 11px;
+}
+.examples__item_text {
+  margin-bottom: 18px;
+  line-height: 2rem;
+}
+.examples__item_text:last-child {
+  margin: 0;
 }
 
 .container {

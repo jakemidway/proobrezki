@@ -1,4 +1,29 @@
 .examples{
   padding: 100px 0 94px;
   background-color: $bgColor;
+  font-size: 1.5rem;
+  &__title{
+    margin-bottom: 77px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 26px;
+    min-height: 397px;
+    img{
+      margin-bottom: 35px;
+    }
+  }
+  &__item_name{
+    margin-bottom: 11px;
+  }
+  &__item_text{
+    margin-bottom: 18px;
+    line-height: 2rem;
+    &:last-child{
+      margin: 0;
+    }
+  }
 }

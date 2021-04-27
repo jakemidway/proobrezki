@@ -21,19 +21,20 @@
 
 .slider__items {
   display: flex;
+  justify-content: space-between;
   transition: transform 0.5s ease;
 }
 .slider__item-container{
-  height: 100px;
-  background-color: gray;
+
 }
 .slider_disable-transition {
   transition: none;
 }
 
 .slider__item {
-  flex: 0 0 100%;
+  flex: 0 0 270px;
   max-width: 100%;
+  margin-right: 30px;
   user-select: none;
 }
 
