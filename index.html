@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style/normalize.css">
+    <!-- chiefSlider CSS -->
+    <link rel="stylesheet" href="./assets/libs/chiefslider/chiefslider.css">
     <link rel="stylesheet" href="./style/main.css">
     <title>Document</title>
 </head>
@@ -111,9 +113,59 @@
 <section class="examples">
     <div class="container">
         <h2 class="examples__title">Примеры работ</h2>
+        <div class="slider" data-slider="chiefslider">
+            <div class="slider__container">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae inventore minima tenetur.</div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content">2</div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content">3</div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content">4</div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-container">
+                                <div class="slider__item-content">5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+        </div>
     </div>
 </section>
 
 <footer></footer>
+
+
+
+
+<!-- chiefSlider JavaScript -->
+<script src="./assets/libs/chiefslider/chiefslider.js"></script>
+<script>
+    // после готовности DOM
+    document.addEventListener('DOMContentLoaded', function() {
+        // получаем корневой элемент слайдера
+        const $slider = document.querySelector('[data-slider="chiefslider"]');
+        // выполняем инициализацию
+        new ChiefSlider($slider);
+    });
+</script>
 </body>
 </html>
