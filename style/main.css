@@ -340,6 +340,10 @@ h3 {
   background-repeat: no-repeat;
 }
 
+.gallery {
+  padding: 100px 0;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
