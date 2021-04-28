@@ -1,0 +1,27 @@
+.coworking{
+  font-size: 1.5rem;
+  padding: 100px 0 93px;
+  &__title{
+    margin-bottom: 77px;
+  }
+  &__content{
+    display: flex;
+    div{
+      width: 50%;
+    }
+  }
+  &__left-cont{
+    p{
+      margin-bottom: 38px;
+    }
+    p:last-of-type{
+      margin-bottom: 57px;
+    }
+  }
+  &__right-cont{
+    text-align: right;
+    img{
+      box-shadow: 0 5px 30px rgba(118, 127, 133, 0.47);
+    }
+  }
+}

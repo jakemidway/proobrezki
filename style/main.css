@@ -239,11 +239,42 @@ h3 {
   height: 50px;
   border-radius: 50%;
 }
+@media (max-width: 1350px) {
+  .examples__slider-control {
+    display: none;
+  }
+}
 .examples__slider-control[data-slide=next] {
   right: -80px;
 }
 .examples__slider-control[data-slide=prev] {
   left: -80px;
+}
+
+.coworking {
+  font-size: 1.5rem;
+  padding: 100px 0 93px;
+}
+.coworking__title {
+  margin-bottom: 77px;
+}
+.coworking__content {
+  display: flex;
+}
+.coworking__content div {
+  width: 50%;
+}
+.coworking__left-cont p {
+  margin-bottom: 38px;
+}
+.coworking__left-cont p:last-of-type {
+  margin-bottom: 57px;
+}
+.coworking__right-cont {
+  text-align: right;
+}
+.coworking__right-cont img {
+  box-shadow: 0 5px 30px rgba(118, 127, 133, 0.47);
 }
 
 .container {
