@@ -253,6 +253,7 @@ h3 {
 
 .coworking {
   font-size: 1.5rem;
+  line-height: 2rem;
   padding: 100px 0 93px;
 }
 .coworking__title {
@@ -271,7 +272,9 @@ h3 {
   margin-bottom: 57px;
 }
 .coworking__right-cont {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .coworking__right-cont img {
   box-shadow: 0 5px 30px rgba(118, 127, 133, 0.47);
