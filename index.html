@@ -113,7 +113,7 @@
 <section class="examples">
     <div class="container">
         <h2 class="examples__title">Примеры работ</h2>
-        <div class="slider" data-slider="chiefslider">
+        <div class="examples__slider slider" data-slider="chiefslider">
             <div class="slider__container">
                 <div class="slider__wrapper">
                     <div class="slider__items">
@@ -228,9 +228,21 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="slider__control" data-slide="prev"></a>
-            <a href="#" class="slider__control" data-slide="next"></a>
+            <a href="#" class="slider__control examples__slider-control" data-slide="prev"></a>
+            <a href="#" class="slider__control examples__slider-control" data-slide="next"></a>
+            <ol class="slider__indicators">
+                <li data-slide-to="0"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+                <li data-slide-to="5"></li>
+                <li data-slide-to="6"></li>
+                <li data-slide-to="7"></li>
+            </ol>
         </div>
+        <!-- индикаторы -->
+
     </div>
 </section>
 
@@ -248,7 +260,7 @@
         const $slider = document.querySelector('[data-slider="chiefslider"]');
         // выполняем инициализацию
         new ChiefSlider($slider, {
-            loop: false // без зацикливания
+            loop: false, // без зацикливания
         });
     });
 </script>

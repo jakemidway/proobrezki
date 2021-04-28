@@ -205,7 +205,8 @@ h3 {
 }
 
 .examples {
-  padding: 100px 0 94px;
+  position: relative;
+  padding: 100px 0 190px;
   background-color: #F5F3F0;
   font-size: 1.5rem;
 }
@@ -232,6 +233,17 @@ h3 {
 }
 .examples__item_text:last-child {
   margin: 0;
+}
+.examples__slider-control {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.examples__slider-control[data-slide=next] {
+  right: -80px;
+}
+.examples__slider-control[data-slide=prev] {
+  left: -80px;
 }
 
 .container {
