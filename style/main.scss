@@ -15,6 +15,7 @@ html{
 }
 a{
   text-decoration: none;
+  color: $colorBtn;
 }
 li{
   list-style: none;
@@ -36,6 +37,7 @@ h3{
 @import "blocks/services";
 @import "blocks/examples";
 @import "blocks/coworking";
+@import "blocks/connection";
 
 
 
