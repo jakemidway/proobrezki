@@ -26,11 +26,11 @@
             <nav class="header__navigation">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="#">Мастерская</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#gallery">Мастерская</a></li>
                     <li class="header__nav-item"><a class="header__nav-link" href="#">Мастер-классы</a></li>
                     <li class="header__nav-item"><a class="header__nav-link" href="#">Обучение</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="#">Мебель на заказ</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#examples">Мебель на заказ</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#connection">Контакты</a></li>
                 </ul>
 
 
@@ -42,6 +42,19 @@
                     </svg>
                 </div>
 
+                <div class="header__vertical-menu header__vertical-menu_hidden">
+                    <div class="header__close-btn">
+
+                    </div>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#gallery">Мастерская</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Мастер-классы</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Обучение</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#examples">Мебель на заказ</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#connection">Контакты</a></li>
+                    </ul>
+                </div>
 
 
             </nav>
@@ -108,7 +121,7 @@
     </div>
 </section>
 
-<section class="examples">
+<section class="examples" id="examples">
     <div class="container">
         <h2 class="examples__title">Примеры работ</h2>
         <div class="examples__slider slider" data-slider="chiefslider">
@@ -266,7 +279,7 @@
     </div>
 </section>
 
-<section class="connection">
+<section class="connection" id="connection">
     <div class="container">
         <div class="grid-wrapper">
             <div class="connection__form">
@@ -293,7 +306,7 @@
     </div>
 </section>
 
-<section class="gallery">
+<section class="gallery" id="gallery">
     <div class="container">
         <h2 class="gallery__title">Жизнь столярки</h2>
         <div class="gallery__grid">
@@ -344,8 +357,7 @@
 </footer>
 
 
-
-
+<script src="./js/script.js"></script>
 <!-- chiefSlider JavaScript -->
 <script src="./assets/libs/chiefslider/chiefslider.js"></script>
 <script>

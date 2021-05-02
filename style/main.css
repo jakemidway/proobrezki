@@ -242,6 +242,30 @@ h3 {
     display: block;
   }
 }
+.header__vertical-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 840px;
+  background-color: #58534A;
+}
+.header__vertical-menu_hidden {
+  display: none;
+}
+.header__vertical-menu_visible {
+  display: block;
+}
+.header__menu-item {
+  padding: 5px 20px;
+}
+.header__menu-item:hover {
+  border: 1px solid #EBB018;
+}
+.header__close-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #EBB018;
+}
 .header__offer {
   padding: 74px 0 82px;
 }
