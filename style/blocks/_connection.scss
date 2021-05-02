@@ -1,3 +1,5 @@
+@import "../variables";
+
 .connection{
   background-color: $bgColorDark;
   color: #fff;
@@ -16,43 +18,5 @@
   }
   &__contacts{
     margin-bottom: 28px;
-    display: flex;
-    align-items: center;
-  }
-  &__tel{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding-left: 42px;
-    margin-right: 30px;
-    line-height: 2.2rem;
-    &:before{
-      position: absolute;
-      content: '';
-      display: block;
-      width: 29px;
-      height: 29px;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      @include imgPath("connection/phone-call.svg");
-      background-repeat: no-repeat;
-    }
-  }
-  &__instagram{
-    position: relative;
-    padding-left: 36px;
-    &:before{
-      position: absolute;
-      content: '';
-      display: block;
-      width: 24px;
-      height: 23px;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      @include imgPath("connection/instagram.svg");
-      background-repeat: no-repeat;
-    }
   }
 }

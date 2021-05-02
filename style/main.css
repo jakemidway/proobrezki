@@ -180,7 +180,7 @@ h3 {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  min-height: 720px;
+  min-height: 840px;
   padding: 48px 0;
   color: white;
   font-size: 2rem;
@@ -421,44 +421,6 @@ h3 {
 }
 .connection__contacts {
   margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-}
-.connection__tel {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-left: 42px;
-  margin-right: 30px;
-  line-height: 2.2rem;
-}
-.connection__tel:before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 29px;
-  height: 29px;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background-image: url("./../assets/img/connection/phone-call.svg");
-  background-repeat: no-repeat;
-}
-.connection__instagram {
-  position: relative;
-  padding-left: 36px;
-}
-.connection__instagram:before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 24px;
-  height: 23px;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background-image: url("./../assets/img/connection/instagram.svg");
-  background-repeat: no-repeat;
 }
 
 .gallery {
@@ -499,6 +461,60 @@ h3 {
 .gallery__grid-item:nth-child(6n) {
   grid-column: 3;
   grid-row: 3/5;
+}
+
+.footer {
+  color: white;
+  font-size: 1.5rem;
+  background-color: #543F32;
+}
+.footer__cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts__tel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 42px;
+  margin-right: 30px;
+  line-height: 2.2rem;
+}
+.contacts__tel:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 29px;
+  height: 29px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("./../assets/img/connection/phone-call.svg");
+  background-repeat: no-repeat;
+}
+.contacts__instagram {
+  position: relative;
+  padding-left: 36px;
+}
+.contacts__instagram:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 23px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("./../assets/img/connection/instagram.svg");
+  background-repeat: no-repeat;
+}
+.contacts_fff a {
+  color: white;
 }
 
 .container {
