@@ -467,10 +467,18 @@ h3 {
   color: white;
   font-size: 1.5rem;
   background-color: #543F32;
+  padding: 98px 0;
 }
 .footer__cont {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  line-height: 2.2rem;
+}
+.footer__logo {
+  font-family: "OpenSansBold", serif;
+  font-size: 2rem;
 }
 
 .contacts {
@@ -490,7 +498,7 @@ h3 {
   content: "";
   display: block;
   width: 29px;
-  height: 29px;
+  height: 31px;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -506,7 +514,7 @@ h3 {
   content: "";
   display: block;
   width: 24px;
-  height: 23px;
+  height: 24px;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
