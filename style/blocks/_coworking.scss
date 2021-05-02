@@ -7,11 +7,15 @@
   }
   &__content{
     display: flex;
-    div{
-      width: 50%;
+    @media (max-width: 987px) {
+      flex-direction: column-reverse;
     }
   }
   &__left-cont{
+    width: 50%;
+    @media (max-width: 987px) {
+      width: auto;
+    }
     p{
       margin-bottom: 38px;
     }
@@ -20,12 +24,22 @@
     }
   }
   &__right-cont{
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    @media (max-width: 987px) {
+      width: auto;
+      justify-content: center;
+      margin-bottom: 57px;
+    }
     img{
-
       box-shadow: 0 5px 30px rgba(118, 127, 133, 0.47);
+    }
+  }
+  &__btn{
+    @media (max-width: 987px) {
+      margin: auto;
     }
   }
 }
