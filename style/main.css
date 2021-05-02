@@ -176,10 +176,6 @@ h3 {
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
   min-height: 840px;
   padding: 48px 0;
   color: white;
@@ -255,6 +251,11 @@ h3 {
 .header__vertical-menu_visible {
   display: block;
 }
+@media (max-width: 1080px) {
+  .header__vertical-menu_visible {
+    display: none;
+  }
+}
 .header__menu-item {
   padding: 5px 20px;
 }
@@ -265,9 +266,6 @@ h3 {
   width: 50px;
   height: 50px;
   background-color: #EBB018;
-}
-.header__offer {
-  padding: 74px 0 82px;
 }
 .header__title {
   text-align: center;
@@ -288,7 +286,7 @@ h3 {
   color: #EBB018;
 }
 
-.btn__body {
+.btn {
   width: 224px;
   height: 58px;
   background: #EBB018;
@@ -299,16 +297,14 @@ h3 {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out 0s;
-}
-.btn__body:hover {
-  background-color: white;
-  border: 2px solid #413431;
-}
-.btn__text {
   font-family: OpenSansBold, serif;
   font-weight: 800;
   font-size: 1.5rem;
   color: #413431;
+}
+.btn:hover {
+  background-color: white;
+  border: 2px solid #413431;
 }
 
 .services {
@@ -593,6 +589,12 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+
+.vertical-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

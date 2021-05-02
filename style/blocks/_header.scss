@@ -3,10 +3,6 @@
 @import "./../mixin";
 
 .header{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
   min-height: 840px;
   padding: 48px 0;
   color: white;
@@ -80,6 +76,9 @@
     }
     &_visible{
       display: block;
+      @media (max-width: 1080px) {
+        display: none;
+      }
     }
   }
   &__menu-item{
@@ -94,7 +93,7 @@
     background-color: $colorBtn;
   }
   &__offer{
-    padding: 74px 0 82px;
+
   }
   &__title{
     text-align: center;

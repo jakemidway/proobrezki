@@ -1,7 +1,6 @@
 @import "./../variables";
 
 .btn{
-  &__body{
     width: 224px;
     height: 58px;
     background: $colorBtn;
@@ -12,16 +11,12 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out 0s;
-    &:hover{
-      background-color: white;
-      border: 2px solid $colorText;
-    }
-  }
-  &__text{
     font-family: OpenSansBold, serif;
     font-weight: 800;
     font-size: 1.5rem;
     color: $colorText;
+    &:hover{
+      background-color: white;
+      border: 2px solid $colorText;
   }
-
 }
