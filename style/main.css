@@ -353,11 +353,23 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .services__content {
+    flex-direction: column;
+  }
+}
 .services__item {
   width: 222px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 900px) {
+  .services__item {
+    margin-bottom: 38px;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 .services__ico {
   background: linear-gradient(135deg, #FFD27B 0%, rgba(255, 222, 158, 0.85) 100%);

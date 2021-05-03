@@ -6,13 +6,21 @@
   &__content{
     display: flex;
     justify-content: space-between;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      //align-items: center;
+    }
   }
   &__item{
-    //background-image: url("");
     width: 222px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 900px){
+      margin-bottom: 38px;
+      flex-direction: row;
+      width: 100%;
+    }
   }
   &__ico{
     background: linear-gradient(135deg, $gradientFirstColor 0%, $gradientSecondColor 100%);
