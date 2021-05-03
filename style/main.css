@@ -15,6 +15,11 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "OpenSansItalic";
+  src: url("./../assets/fonts/Open_Sans/OpenSans-Italic.ttf");
+  font-style: normal;
+}
+@font-face {
   font-family: "RobotoBlack";
   src: url("./../assets/fonts/Roboto/Roboto-Black.ttf");
   font-style: normal;
@@ -185,10 +190,18 @@ h3 {
   background-position: 50% 0;
   background-size: cover;
 }
+.header__flex-wrapper {
+  height: 710px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 .header__logo {
   font-family: "OpenSansBold", serif;
 }
 .header__top-head {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -251,11 +264,6 @@ h3 {
 .header__vertical-menu_visible {
   display: block;
 }
-@media (max-width: 1080px) {
-  .header__vertical-menu_visible {
-    display: none;
-  }
-}
 .header__menu-item {
   padding: 5px 20px;
 }
@@ -267,6 +275,11 @@ h3 {
   height: 50px;
   background-color: #EBB018;
 }
+.header__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .header__title {
   text-align: center;
   font-family: "RobotoBlack", sans-serif;
@@ -276,14 +289,29 @@ h3 {
   margin-bottom: 60px;
 }
 .header__text {
-  font-family: OpenSansBold, serif;
+  font-family: "OpenSansBold", serif;
   font-weight: bold;
   text-align: center;
   line-height: 3.6rem;
   letter-spacing: 0.13em;
+  margin-bottom: 60px;
 }
 .header__accent-text {
   color: #EBB018;
+}
+.header__bottom {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header__bottom-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "OpenSansItalic", serif;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -292,15 +320,19 @@ h3 {
   background: #EBB018;
   border: 2px solid #EBB018;
   border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   transition: all 0.3s ease-in-out 0s;
   font-family: OpenSansBold, serif;
   font-weight: 800;
   font-size: 1.5rem;
+}
+.btn a {
+  width: 100%;
+  height: 100%;
   color: #413431;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .btn:hover {
   background-color: white;
@@ -589,12 +621,6 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
   }
-}
-
-.vertical-flex-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

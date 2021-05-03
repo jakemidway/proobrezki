@@ -1,8 +1,6 @@
 @import "fonts";
 @import "variables";
 
-
-
 *{
   margin: 0;
   padding: 0;
@@ -29,8 +27,6 @@ h3{
   font-size: 2.2rem;
 }
 
-
-
 //blocks
 @import "chiefslider";
 @import "./blocks/header";
@@ -43,7 +39,6 @@ h3{
 @import "blocks/footer";
 @import "blocks/contacts";
 
-
 .container{
   width: 1170px;
   margin: 0 auto;
@@ -53,8 +48,4 @@ h3{
     padding-right: 10px;
   }
 }
-.vertical-flex-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
