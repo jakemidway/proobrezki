@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="712e9bdd-2129-46c5-875e-7f39db279972" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/img/Arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/blocks/_btnDown.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/blocks/_btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/blocks/_btn.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/blocks/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/blocks/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css.map" afterDir="false" />
@@ -90,7 +90,7 @@
       <workItem from="1619974731737" duration="586000" />
       <workItem from="1619976836382" duration="616000" />
       <workItem from="1619983819663" duration="1623000" />
-      <workItem from="1620011678320" duration="2922000" />
+      <workItem from="1620011678320" duration="3895000" />
     </task>
     <servers />
   </component>
