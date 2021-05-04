@@ -511,13 +511,11 @@ h3 {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 40px 40px 110px;
 }
-.connection__form input,
-.connection__form select,
-.connection__form textarea {
+.connection__form button, .connection__form input, .connection__form optgroup, .connection__form select, .connection__form textarea {
   background-color: #58534A;
   color: #ffffff;
 }
-.connection__form input {
+.connection__form input, .connection__form textarea {
   border: none;
   border-bottom: 1px solid #ffffff;
 }
@@ -531,6 +529,20 @@ h3 {
 }
 .connection__form textarea {
   grid-column: 1/6;
+  resize: none;
+}
+.connection__form button {
+  border: 1px solid #EBB018;
+  border-radius: 50%;
+  background-color: #EBB018;
+  width: 48px;
+  height: 48px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.connection__form button:hover {
+  color: #413431;
+  background-color: #fff;
+  border: 1px solid #413431;
 }
 .connection__title {
   margin-bottom: 84px;

@@ -20,13 +20,12 @@
       grid-template-columns: repeat(7, 1fr);
       grid-template-rows: 40px 40px 110px;
     }
-    input,
-    select,
-    textarea{
+    button, input, optgroup, select, textarea{
       background-color: $bgColorDark;
       color: #ffffff;
     }
-    input{
+
+    input, textarea{
       border: none;
       border-bottom: 1px solid #ffffff;
     }
@@ -40,15 +39,23 @@
     }
     textarea{
       grid-column: 1/6;
+      resize: none;
     }
-
-
+    button{
+      border: 1px solid $colorBtn;
+      border-radius: 50%;
+      background-color: $colorBtn;
+      width: 48px;
+      height: 48px;
+      transition: all 0.3s ease-in-out 0s;
+      &:hover{
+        color: $colorText;
+        background-color: #fff;
+        border: 1px solid $colorText;
+      }
+    }
   }
-  &__info{
-    //border:1px dashed darkred;
-    //grid-column-start: 8;
-    //grid-column-end: 12;
-  }
+
   &__title{
     margin-bottom: 84px;
   }
