@@ -6,9 +6,48 @@
   font-size: 1.5rem;
   line-height: 2rem;
   padding: 108px 0 105px;
-  .grid-wrapper{
+  &__wrapper{
     display: grid;
     grid-template-columns: 7fr 5fr;
+    grid-gap: 30px;
+    //border: 1px solid red;
+  }
+  &__form{
+    //border:1px dashed darkred;
+    form{
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: 40px 40px 110px;
+    }
+    input,
+    select,
+    textarea{
+      background-color: $bgColorDark;
+      color: #ffffff;
+    }
+    input{
+      border: none;
+      border-bottom: 1px solid #ffffff;
+    }
+    input[type="text"],
+    input[type="tel"]{
+      grid-column: 1/4;
+    }
+    input[type="email"],
+    select{
+      grid-column: 4/7;
+    }
+    textarea{
+      grid-column: 1/6;
+    }
+
+
+  }
+  &__info{
+    //border:1px dashed darkred;
+    //grid-column-start: 8;
+    //grid-column-end: 12;
   }
   &__title{
     margin-bottom: 84px;

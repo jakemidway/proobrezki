@@ -500,9 +500,37 @@ h3 {
   line-height: 2rem;
   padding: 108px 0 105px;
 }
-.connection .grid-wrapper {
+.connection__wrapper {
   display: grid;
   grid-template-columns: 7fr 5fr;
+  grid-gap: 30px;
+}
+.connection__form form {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 40px 40px 110px;
+}
+.connection__form input,
+.connection__form select,
+.connection__form textarea {
+  background-color: #58534A;
+  color: #ffffff;
+}
+.connection__form input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+.connection__form input[type=text],
+.connection__form input[type=tel] {
+  grid-column: 1/4;
+}
+.connection__form input[type=email],
+.connection__form select {
+  grid-column: 4/7;
+}
+.connection__form textarea {
+  grid-column: 1/6;
 }
 .connection__title {
   margin-bottom: 84px;
