@@ -662,6 +662,7 @@ h3 {
 }
 @media (max-width: 768px) {
   .connection__form form {
+    grid-template-columns: repeat(6, 1fr);
     margin-bottom: 87px;
   }
 }
@@ -685,7 +686,7 @@ h3 {
 @media (max-width: 500px) {
   .connection__form input[type=text],
 .connection__form input[type=tel] {
-    grid-column: 1/8;
+    grid-column: 1/7;
   }
 }
 .connection__form input[type=email],
@@ -695,7 +696,7 @@ h3 {
 @media (max-width: 500px) {
   .connection__form input[type=email],
 .connection__form select {
-    grid-column: 1/8;
+    grid-column: 1/7;
   }
 }
 .connection__form textarea {
