@@ -7,10 +7,10 @@
   padding: 48px 0;
   color: white;
   font-size: 2rem;
-  @include imgPath("header/bg-header.png");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
+  @include imgPath("header/bg-header.png", cover, no-repeat, 50% 0);
+  //background-repeat: no-repeat;
+  //background-position: 50% 0;
+  //background-size: cover;
   @media (max-width: 320px) {
     min-height: 594px;
   }
@@ -71,8 +71,8 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      @include imgPath("connection/phone-call.svg");
-      background-repeat: no-repeat;
+      @include imgPath("connection/phone-call.svg", "", "no-repeat", "");
+      //background-repeat: no-repeat;
     }
   }
   &__contacts-instagram{
@@ -88,8 +88,8 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      @include imgPath("connection/instagram.svg");
-      background-repeat: no-repeat;
+      @include imgPath("connection/instagram.svg", "", "no-repead", "");
+      //background-repeat: no-repeat;
     }
   }
 

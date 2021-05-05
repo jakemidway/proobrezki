@@ -26,8 +26,8 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      @include imgPath("connection/phone-call.svg");
-      background-repeat: no-repeat;
+      @include imgPath("connection/phone-call.svg", "", "no-repeat", "");
+      //background-repeat: no-repeat;
     }
   }
   &__instagram{
@@ -42,8 +42,8 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      @include imgPath("connection/instagram.svg");
-      background-repeat: no-repeat;
+      @include imgPath("connection/instagram.svg", "", "no-repeat", "");
+      //background-repeat: no-repeat;
     }
   }
   &_fff{

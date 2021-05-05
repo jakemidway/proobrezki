@@ -1,7 +1,16 @@
 .coworking{
   font-size: 1.5rem;
   line-height: 2rem;
-  padding: 100px 0 93px;
+  padding: 163px 0 246px;
+  //@include imgPath("coworking/Rectangle27.png", 50%, no-repeat, right);
+  //@include imgPath("coworking/Vector.svg", 50%, no-repeat, left);
+  @include multiBGI(
+                  "coworking/Rectangle27.png", right, no-repeat, 50%,
+                  "coworking/Vector.svg", left, no-repeat, 60%,
+  );
+  //background-repeat: no-repeat;
+  //background-position: right;
+  //background-size: 50%;
   &__title{
     margin-bottom: 77px;
   }
@@ -21,20 +30,6 @@
     }
     p:last-of-type{
       margin-bottom: 57px;
-    }
-  }
-  &__right-cont{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    @media (max-width: 987px) {
-      width: auto;
-      justify-content: center;
-      margin-bottom: 57px;
-    }
-    img{
-      box-shadow: 0 5px 30px rgba(118, 127, 133, 0.47);
     }
   }
   &__btn{

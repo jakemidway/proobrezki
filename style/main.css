@@ -58,6 +58,7 @@ li {
 h2 {
   font-family: "RobotoBlack", sans-serif;
   font-size: 3.6rem;
+  line-height: 3.6rem;
 }
 
 h3 {
@@ -195,9 +196,9 @@ h3 {
   color: white;
   font-size: 2rem;
   background-image: url("./../assets/img/header/bg-header.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: cover;
 }
 @media (max-width: 320px) {
   .header {
@@ -282,7 +283,7 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
   background-image: url("./../assets/img/connection/instagram.svg");
-  background-repeat: no-repeat;
+  background-repeat: no-repead;
 }
 .header__navigation {
   font-size: 1.5rem;
@@ -582,7 +583,9 @@ h3 {
 .coworking {
   font-size: 1.5rem;
   line-height: 2rem;
-  padding: 100px 0 93px;
+  padding: 163px 0 246px;
+  background: url("./../assets/img/coworking/Rectangle27.png") right no-repeat, url("./../assets/img/coworking/Vector.svg") left no-repeat;
+  background-size: 50%, 60%;
 }
 .coworking__title {
   margin-bottom: 77px;
@@ -608,22 +611,6 @@ h3 {
 }
 .coworking__left-cont p:last-of-type {
   margin-bottom: 57px;
-}
-.coworking__right-cont {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-@media (max-width: 987px) {
-  .coworking__right-cont {
-    width: auto;
-    justify-content: center;
-    margin-bottom: 57px;
-  }
-}
-.coworking__right-cont img {
-  box-shadow: 0 5px 30px rgba(118, 127, 133, 0.47);
 }
 @media (max-width: 987px) {
   .coworking__btn {
@@ -677,9 +664,9 @@ h3 {
   height: 48px;
   transition: all 0.3s ease-in-out 0s;
   background-image: url("./../assets/img/Arrow.svg");
-  box-shadow: 0 0 2px #EBB018;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  box-shadow: 0 0 2px #EBB018;
   transform: rotate(-90deg);
 }
 .connection__form button:hover {
