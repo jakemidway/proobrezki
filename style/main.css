@@ -587,6 +587,15 @@ h3 {
   background: url("./../assets/img/coworking/Rectangle27.png") right no-repeat, url("./../assets/img/coworking/Vector.svg") left no-repeat;
   background-size: 50%, 60%;
 }
+@media (max-width: 860px) {
+  .coworking {
+    background-image: url("./../assets/img/coworking/Rectangle27Opacity.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 90px 0 200px;
+  }
+}
 .coworking__title {
   margin-bottom: 77px;
 }
@@ -601,9 +610,14 @@ h3 {
 .coworking__left-cont {
   width: 50%;
 }
-@media (max-width: 987px) {
+@media (max-width: 860px) {
   .coworking__left-cont {
-    width: auto;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .coworking__left-cont {
+    width: 100%;
   }
 }
 .coworking__left-cont p {
