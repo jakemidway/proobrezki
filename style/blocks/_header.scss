@@ -11,12 +11,19 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+  @media (max-width: 320px) {
+    min-height: 594px;
+  }
   &__flex-wrapper{
     height: 720px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 320px) {
+      justify-content: start;
+      height: 594px;
+    }
   }
 
   &__top-head{
@@ -25,6 +32,7 @@
     justify-content: space-between;
     align-items: baseline;
     @media (max-width: 768px) {
+      margin-bottom: 138px;
       align-items: center;
     }
 
@@ -135,10 +143,11 @@
   }
   &__vertical-menu{
     position: absolute;
+    z-index: 10;
     top: 0;
     right: 0;
     height: 840px;
-    background-color: $bgColorDark;
+    background: linear-gradient( $bgColorDark, $bgColorDarkOpacity);
     &_hidden{
       display: none;
     }
@@ -169,8 +178,9 @@
     font-size: 5rem;
     letter-spacing: 0.13em;
     margin-bottom: 60px;
-    @media (max-width: 320px) {
+    @media (max-width: 420px) {
       font-size: 3.5rem;
+      margin-bottom: 28px;
     }
   }
   &__text{
@@ -180,6 +190,9 @@
     line-height: 3.6rem;
     letter-spacing: 0.13em;
     margin-bottom: 60px;
+    @media (max-width: 420px) {
+      margin-bottom: 28px;
+    }
   }
   &__accent-text{
     color: $colorBtn;
@@ -200,6 +213,9 @@
         display: none;
       }
     }
+    @media (max-width: 320px) {
+      display: none;
+    }
   }
   &__bottom-text{
     position: absolute;
@@ -208,6 +224,7 @@
     font-family: 'OpenSansItalicBold', serif;
     font-size: 1.5rem;
     letter-spacing: 0.015em;
+    z-index: 1;
   }
 
 }
