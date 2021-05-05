@@ -18,15 +18,76 @@
     align-items: center;
     justify-content: space-between;
   }
-  &__logo{
-    font-family: 'OpenSansBold', serif;
-  }
+
   &__top-head{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+
   }
+  &__logo{
+    font-family: 'OpenSansBold', serif;
+
+  }
+
+
+
+  &__contacts{
+    font-size: 1.5rem;
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+    @media (max-width: 595px) {
+      display: none;
+    }
+  }
+  &__contacts-tel{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 42px;
+    line-height: 2rem;
+    &:before{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 29px;
+      height: 31px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      @include imgPath("connection/phone-call.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &__contacts-instagram{
+    position: relative;
+    padding-left: 36px;
+    margin-right: 75px;
+    &:before{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      @include imgPath("connection/instagram.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+
+
+
   &__navigation{
     font-size: 1.5rem;
   }
@@ -34,7 +95,6 @@
   }
   &__nav-list{
     display: flex;
-    //display: none;
     @media screen and (max-width: 1080px){
       display: none;
     }
@@ -109,6 +169,9 @@
     font-size: 5rem;
     letter-spacing: 0.13em;
     margin-bottom: 60px;
+    @media (max-width: 320px) {
+      font-size: 3.5rem;
+    }
   }
   &__text{
     font-family: 'OpenSansBold', serif;
@@ -121,19 +184,30 @@
   &__accent-text{
     color: $colorBtn;
   }
+
+
+
+
+
   &__bottom{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .contacts_fff{
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
   &__bottom-text{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'OpenSansItalic', serif;
+    font-family: 'OpenSansItalicBold', serif;
     font-size: 1.5rem;
+    letter-spacing: 0.015em;
   }
 
 }

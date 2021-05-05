@@ -21,12 +21,17 @@
   font-style: normal;
 }
 @font-face{
+  font-family: 'OpenSansItalicBold';
+  src: url("./../assets/fonts/Open_Sans/OpenSans-BoldItalic.ttf");
+  font-style: normal;
+}
+@font-face{
   font-family: 'RobotoBlack';
   src: url("./../assets/fonts/Roboto/Roboto-Black.ttf");
   font-style: normal;
 }
 @font-face{
-  font-family: RobotoRegular;
+  font-family: 'RobotoRegular';
   src: url("./../assets/fonts/Roboto/Roboto-Regular.ttf");
   font-style: normal;
 }

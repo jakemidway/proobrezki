@@ -20,12 +20,17 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "OpenSansItalicBold";
+  src: url("./../assets/fonts/Open_Sans/OpenSans-BoldItalic.ttf");
+  font-style: normal;
+}
+@font-face {
   font-family: "RobotoBlack";
   src: url("./../assets/fonts/Roboto/Roboto-Black.ttf");
   font-style: normal;
 }
 @font-face {
-  font-family: RobotoRegular;
+  font-family: "RobotoRegular";
   src: url("./../assets/fonts/Roboto/Roboto-Regular.ttf");
   font-style: normal;
 }
@@ -201,14 +206,71 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
-.header__logo {
-  font-family: "OpenSansBold", serif;
-}
 .header__top-head {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+@media (max-width: 768px) {
+  .header__top-head {
+    align-items: center;
+  }
+}
+.header__logo {
+  font-family: "OpenSansBold", serif;
+}
+.header__contacts {
+  font-size: 1.5rem;
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__contacts {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 595px) {
+  .header__contacts {
+    display: none;
+  }
+}
+.header__contacts-tel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 42px;
+  line-height: 2rem;
+}
+.header__contacts-tel:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 29px;
+  height: 31px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("./../assets/img/connection/phone-call.svg");
+  background-repeat: no-repeat;
+}
+.header__contacts-instagram {
+  position: relative;
+  padding-left: 36px;
+  margin-right: 75px;
+}
+.header__contacts-instagram:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("./../assets/img/connection/instagram.svg");
+  background-repeat: no-repeat;
 }
 .header__navigation {
   font-size: 1.5rem;
@@ -292,6 +354,11 @@ h3 {
   letter-spacing: 0.13em;
   margin-bottom: 60px;
 }
+@media (max-width: 320px) {
+  .header__title {
+    font-size: 3.5rem;
+  }
+}
 .header__text {
   font-family: "OpenSansBold", serif;
   font-weight: bold;
@@ -310,12 +377,18 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .header__bottom .contacts_fff {
+    display: none;
+  }
+}
 .header__bottom-text {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "OpenSansItalic", serif;
+  font-family: "OpenSansItalicBold", serif;
   font-size: 1.5rem;
+  letter-spacing: 0.015em;
 }
 
 .btn {
