@@ -639,16 +639,36 @@ h3 {
   line-height: 2rem;
   padding: 108px 0 105px;
 }
+@media (max-width: 768px) {
+  .connection {
+    padding: 74px 0;
+  }
+}
 .connection__wrapper {
   display: grid;
   grid-template-columns: 7fr 5fr;
   grid-gap: 30px;
+}
+@media (max-width: 768px) {
+  .connection__wrapper {
+    display: block;
+  }
 }
 .connection__form form {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 40px 40px 110px;
+}
+@media (max-width: 768px) {
+  .connection__form form {
+    margin-bottom: 87px;
+  }
+}
+@media (max-width: 500px) {
+  .connection__form form {
+    grid-template-rows: 40px 40px 40px 40px 110px;
+  }
 }
 .connection__form button, .connection__form input, .connection__form optgroup, .connection__form select, .connection__form textarea {
   background-color: #58534A;
@@ -662,9 +682,21 @@ h3 {
 .connection__form input[type=tel] {
   grid-column: 1/4;
 }
+@media (max-width: 500px) {
+  .connection__form input[type=text],
+.connection__form input[type=tel] {
+    grid-column: 1/8;
+  }
+}
 .connection__form input[type=email],
 .connection__form select {
   grid-column: 4/7;
+}
+@media (max-width: 500px) {
+  .connection__form input[type=email],
+.connection__form select {
+    grid-column: 1/8;
+  }
 }
 .connection__form textarea {
   grid-column: 1/6;
@@ -686,8 +718,18 @@ h3 {
 .connection__form button:hover {
   box-shadow: 0 0 4px white;
 }
+.connection__submit-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .connection__title {
   margin-bottom: 84px;
+}
+@media (max-width: 768px) {
+  .connection__title {
+    margin-bottom: 77px;
+  }
 }
 .connection__address {
   margin-bottom: 28px;
