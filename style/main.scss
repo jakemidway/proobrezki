@@ -41,6 +41,7 @@ h3{
 @import "blocks/contacts";
 
 .container{
+  min-width: 320px;
   width: 1170px;
   margin: 0 auto;
   @media screen and (max-width: 1200px) {
