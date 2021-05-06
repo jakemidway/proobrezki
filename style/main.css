@@ -820,6 +820,11 @@ h3 {
   background-color: #543F32;
   padding: 98px 0;
 }
+@media (max-width: 385px) {
+  .footer {
+    padding: 70px 0 80px;
+  }
+}
 .footer__cont {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -827,9 +832,30 @@ h3 {
   align-items: center;
   line-height: 2.2rem;
 }
+@media (max-width: 650px) {
+  .footer__cont {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 385px) {
+  .footer__cont {
+    grid-template-columns: 1fr;
+  }
+}
 .footer__logo {
   font-family: "OpenSansBold", serif;
   font-size: 2rem;
+}
+@media (max-width: 650px) {
+  .footer__item:nth-child(1) {
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 385px) {
+  .footer__item:nth-child(1) {
+    grid-column: auto;
+  }
 }
 
 .contacts {
